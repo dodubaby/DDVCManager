@@ -20,7 +20,7 @@ How to use
 ```
 
 ### Step 2
-in your viewcontroller use  UIViewController's category methods
+in ours viewcontroller use  UIViewController's category methods
 ```objectivec
 [self pushVC:vc];
 [self popVC];
@@ -31,7 +31,7 @@ in your viewcontroller use  UIViewController's category methods
 [self dismissVC];
 
 ```
-also u can use DDVCManager derectly
+also, we can use DDVCManager derectly
 
 ```objectivec
 DDVCManager *manager = [DDVCManager sharedManager];
