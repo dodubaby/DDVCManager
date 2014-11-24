@@ -13,8 +13,35 @@ How to use
     DDHomeViewController *root =  [[DDHomeViewController alloc] initWithName:@"DDHomeViewController0"];
     root.leftNavButtonHidden = YES;
     [[DDVCManager sharedManager] setRootViewController:root];
-    [DDVCManager setAnimType:DDAnimTypeDepth];
+    [DDVCManager setAnimType:DDAnimTypeDepth]; // animation type DDAnimTypeDepth/DDAnimTypeClassic
     
     return YES;
 }
+```
+
+### Step 2
+in your viewcontroller use  UIViewController's category methods
+```objectivec
+[self pushVC:vc];
+[self popVC];
+[self popToRootVC];
+[self popToVC:vcName];
+
+[self presentVC:vc];
+[self dismissVC];
+
+```
+also u can use DDVCManager derectly
+
+```objectivec
+DDVCManager *manager = [DDVCManager sharedManager];
+
+[manager pushVC:vc];
+[manager popVC];
+[manager popToRootVC];
+[manager popToVC:vcName];
+
+[manager presentVC:vc];
+[manager dismissVC];
+
 ```
