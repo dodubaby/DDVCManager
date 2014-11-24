@@ -1,7 +1,7 @@
 DDVCManager
 ===========
 
-DDVCManager
+a lightweight library to manager ours UIViewController without UINavigationController
 
 How to use
 ===========
