@@ -7,6 +7,7 @@ How to use
 ===========
 ### Step 1
 
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     DDHomeViewController *root =  [[DDHomeViewController alloc] initWithName:@"DDHomeViewController0"];
@@ -16,3 +17,4 @@ How to use
     
     return YES;
 }
+```
